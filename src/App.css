@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.logo img {
+    width: 60px;
+    margin-right: 6px;
+}
+.search {
+    background-color: #282f36;
+    border: none;
+}
+.search:focus {
+    color: white;
+    background-color: #282f36;
+}
+.navbar-toggler-icon {
+    color: white;
+}
+.navbar-toggler {
+    background-color: white;
+    /* padding: 20px; */
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+.navbar-collapse {
+    padding-left: 20px;
+    font-size: 18px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background-img {
+    background: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(5, 38, 148, 0.171) 6%,
+            rgba(0, 0, 0, 0) 100%
+        ),
+        url('../public/images/back.jpg');
+
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.filter {
+    border: 2px solid rgba(0, 0, 0, 0.185);
+    background: #1b2936;
+    border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.filter a,
+.filter1 a {
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+}
+.filter a:hover,
+.filter1 a:hover {
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.b1 {
+    border-bottom: 3px solid #18e7cf;
+}
+.b2 {
+    border-bottom: 3px solid #00a3ff;
+}
+.b3 {
+    border-bottom: 3px solid #ff644e;
+}
+.b4 {
+    border-bottom: 3px solid #efbc40;
+}
+/* card */
+.cards {
+    border: none;
+    background: #1b2936;
+    border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards img {
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.footer h6 {
+    margin-bottom: 20px;
+    color: #878b8f;
+}
+
+/* sidebar */
+
+.btn-close {
+    background-color: white;
 }
